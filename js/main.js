@@ -4,7 +4,8 @@ const numArray = [];
 
 function func() {
   let result;
-  let num1 = Number(document.getElementById('num1').value);
+  let docInput = document.getElementById('num1').value;
+  let num1 = Number(docInput.replace(' ', ''));
   switch (op) {
     case '1%':
       result = Math.floor(num1 - num1 * 0.01);
