@@ -39,12 +39,24 @@
             >
               Fee 2%
             </button>
+            <button
+              class="subm-button subm-button--minor button"
+              onclick="op='-50', func(), cleanInput(), sum(numArray)"
+            >
+              -50
+            </button>
+            <button
+              class="subm-button subm-button--minor button"
+              onclick="op='-100', func(), cleanInput(), sum(numArray)"
+            >
+              -100
+            </button>
           </div>
         </div>
         <div class="bottom-wrap">
           <div class="log-wrap">
             <p class="log-title">Log:</p>
-            <p class="log-output" id="log-output">________</p>
+            <p class="log-output" id="log-output"></p>
             <button type="button" class="log-delete button" onclick="delLastVal(), sum(numArray)">
               delete last value
             </button>
@@ -55,6 +67,7 @@
               <p class="summary-output summary-output--copy" id="summary-output">0</p>
               <p class="summary-output__span summary-output--copy">$</p>
             </div>
+            <img src="./images/azov.png" alt="azov" />
           </div>
         </div>
       </div>

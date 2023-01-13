@@ -13,6 +13,12 @@ function func() {
     case '2%':
       result = Math.floor(num1 - num1 * 0.02);
       break;
+    case '-50':
+      result = Math.floor(num1 - 50);
+      break;
+    case '-100':
+      result = Math.floor(num1 - 100);
+      break;
   }
   numArray.push(result);
   document.getElementById('output').innerHTML = result;
