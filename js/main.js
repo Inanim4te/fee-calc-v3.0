@@ -5,7 +5,7 @@ const numArray = [];
 function func() {
   let result;
   let docInput = document.getElementById('num1').value;
-  let num1 = Number(docInput.replace(' ', ''));
+  let num1 = Number(docInput.replaceAll(' ', ''));
   switch (op) {
     case '1%':
       result = Math.floor(num1 - num1 * 0.01);
