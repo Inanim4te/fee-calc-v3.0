@@ -43,6 +43,13 @@ const cleanInput = () => {
   getInput.value = '';
 };
 
+const cleanOutput = () => {
+  const getOutput = document.getElementById('output');
+  numArray.length !== 0
+    ? (getOutput.innerHTML = numArray[numArray.length - 1])
+    : (getOutput.innerHTML = 0);
+};
+
 function delLastVal() {
   numArray.pop();
   document.getElementById('log-output').innerHTML = numArray.join('<br>');

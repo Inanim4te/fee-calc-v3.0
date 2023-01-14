@@ -57,7 +57,11 @@
           <div class="log-wrap">
             <p class="log-title">Log:</p>
             <p class="log-output" id="log-output"></p>
-            <button type="button" class="log-delete button" onclick="delLastVal(), sum(numArray)">
+            <button
+              type="button"
+              class="log-delete button"
+              onclick="delLastVal(), sum(numArray), cleanOutput()"
+            >
               delete last value
             </button>
           </div>
