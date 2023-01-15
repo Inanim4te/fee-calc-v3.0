@@ -23,6 +23,7 @@ function func() {
   numArray.push(result);
   document.getElementById('output').innerHTML = result;
   document.getElementById('log-output').innerHTML = numArray.join('<br>');
+  document.getElementById('log-counter').innerHTML = numArray.length;
 }
 
 document.body.onclick = event => {
@@ -35,6 +36,9 @@ document.body.onclick = event => {
   }
   if (elem.classList.contains('fee-output--copy')) {
     navigator.clipboard.writeText(document.getElementById('output').innerHTML);
+  }
+  if (elem.classList.contains('log-count') || elem.classList.contains('log-counter')) {
+    navigator.clipboard.writeText(document.getElementById('log-counter').innerHTML);
   }
 };
 
@@ -53,6 +57,7 @@ const cleanOutput = () => {
 function delLastVal() {
   numArray.pop();
   document.getElementById('log-output').innerHTML = numArray.join('<br>');
+  document.getElementById('log-counter').innerHTML = numArray.length;
 }
 
 function sum(x) {
