@@ -11,7 +11,7 @@ function func() {
       result = Math.floor(num1 - num1 * 0.01);
       break;
     case '2%':
-      result = Math.floor(num1 - num1 * 0.02);
+      result = Math.floor(num1 - num1 * 0.025);
       break;
     case '-50':
       result = Math.floor(num1 - 50);
