@@ -10,14 +10,14 @@ function func() {
     case '1%':
       result = Math.floor(num1 - num1 * 0.01);
       break;
-    case '5000':
-      result = Math.floor(5000 - 50);
+    case '9900':
+      result = 9900;
       break;
     case '-50':
       result = Math.floor(num1 - 50);
       break;
-    case '-125':
-      result = Math.floor(num1 - 125);
+    case '4950':
+      result = 4950;
       break;
   }
   numArray.push(result);
