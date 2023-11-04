@@ -16,8 +16,8 @@ function func() {
     case '-50':
       result = Math.floor(num1 - 50);
       break;
-    case '4950':
-      result = 4950;
+    case '1.5%':
+      result = Math.floor(num1 - num1 * 0.015);
       break;
   }
   numArray.push(result);
