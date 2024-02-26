@@ -10,8 +10,8 @@ function func() {
     case '1%':
       result = Math.floor(num1 - num1 * 0.01);
       break;
-    case '9900':
-      result = 9900;
+    case '34650':
+      result = 34650;
       break;
     case '-50':
       result = Math.floor(num1 - 50);
